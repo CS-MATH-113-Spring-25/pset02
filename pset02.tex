@@ -1,0 +1,141 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titling}
+
+
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CS/MATH 113, SPRING 2025}{Pset 02: Predicate Logic}{\theauthor}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+% \printanswers %Uncomment this line
+
+\title{Problem Set 02: Predicate Logic}
+\author{Blingblong} % <=== replace with your student ID, e.g. xy012345
+\date{CS/MATH 113 Discrete Mathematics\\Habib University\\Spring 2025}
+
+% \qformat{\large\bf \thequestion.}
+\boxedpoints
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+    \question What is the difference between a predicate and a propositional?
+    \begin{solution}
+        % Enter solution here
+    \end{solution}
+
+    \question Let consider the following predicates:
+    \begin{itemize}
+        \item $P(x):$ $x$ an even number.
+        \item $Q(x):$ $x$ is a prime number.
+        \item $R(x,y):$ $x \geq y$.
+        \item $S(x,y):$ $x$ is divisible by $y$.
+        \item $T(x):$ $x$ is odd. 
+    \end{itemize}
+    The domain for quantifiers is the set of all natural numbers.
+    Convert the following english statements in predicate logic.
+    \begin{parts}
+        \part There is a natural number that is even but not divisible by 3.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part All natural numbers are greater than 0 and if a natural number is divisible by 2 then it is even.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part There is a unique (only one) natural number that is even and prime.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part There is no natural number that is both even and odd. 
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part All natural numbers that are either even or odd but not both is a natural number is even and greater than equal to 3 then then if its prime then its not divisible by 2.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+    \end{parts}
+    
+
+
+    \question Let consider the following predicates:
+    \begin{itemize}
+        \item $P(x):$ $x$ is a true Sigma.
+        \item $Q(x):$ $x$ mews constantly.
+        \item $R(x):$ $x$ is a skibidi rizzler.
+        \item $S(x,y):$ $x$ will give $y$ knee surgery tomorrow.
+        \item $T(x):$ $x$ works at the RO office. 
+        \item $U(x):$ $x$ is a student in your class. 
+        \item $V(x):$ $x$ will get A$^+$ in DM. 
+    \end{itemize}
+    The domain for quantifiers consists of everyone in UHU (Univerity of Habib University).
+    Convert the following statements in English.
+    \begin{parts}
+        \part $\forall x T(x) \implies (P(x) \land Q(x) \land R(x))$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $\exists x \exists y, T(x) \land U(y) \land (R(y) \lor S(x,y))$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $\forall x  (U(x) \land (P(x)\lor R(x))) \implies V(x)$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $\forall x \neg (\exists y \neg V(x) \land S(y,v))$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $\forall x \exists y (V(x) \iff (T(y) \land U(x) \land S(x,y)) \lor \neg (\neg P(x) \lor \neg Q(x) \lor \neg S(x,y)))$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+    \end{parts}
+
+    \question Negate the following statements
+    \begin{parts}
+        \part $\exists y \forall x (P(y) \implies Q(x))$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $\forall x \exists y ((P(x) \land \forall z Q(z)) \lor \neg P(y))$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $\not\exists x \forall y \exists z (\neg P(x) \land Q(y)) \lor (P(x)\lor \neg R(y))$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+    \end{parts}
+    
+
+      
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
